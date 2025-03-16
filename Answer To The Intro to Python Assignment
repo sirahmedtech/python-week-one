@@ -1,0 +1,26 @@
+def math_operation():
+    # Getting the user input for numbers and operation
+    instr1 = int(input("Enter the first number: "))
+    operation = input("Enter your preffered operation (+, -, *, /): ")
+    instr2 = int(input("Enter the second number: "))
+
+    # Performing the operation based on user input
+    if operation == "+":
+        result = instr1 + instr2
+        print(f"{instr1} + {instr2} = {result}")
+    elif operation == "-":
+        result = intr1 - instr2
+        print(f"{instr1} - {instr2} = {result}")
+    elif operation == "*":
+        result = instr1 * instr2
+        print(f"{instr1} * {instr2} = {result}")
+    elif operation == "/":
+        if instr2 != 0:
+            result = instr1 / instr2
+            print(f"{instr1} / {instr2} = {result}")
+        else:
+            print("Error: Division by zero is not allowed.")
+    else:
+        print("Error: Invalid operation. Please enter +, -, *, or /.")
+
+math_operation()
